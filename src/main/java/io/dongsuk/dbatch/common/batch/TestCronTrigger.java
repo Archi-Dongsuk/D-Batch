@@ -25,7 +25,6 @@ public class TestCronTrigger {
 
         JobDetail job = JobBuilder.newJob(testJob.class).withIdentity("testJob").build();
 
-
         Trigger trigger = TriggerBuilder.newTrigger().withSchedule(CronScheduleBuilder.cronSchedule("15 * * * * ?")).build();
 
         scheduler.scheduleJob(job, trigger);
