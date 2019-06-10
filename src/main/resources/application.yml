@@ -7,7 +7,7 @@ spring:
     template:
       cache: false
   datasource:
-    url: jdbc:h2:file:~/dbatch
+    url: jdbc:h2:file:~/dbatchDB
     username: sa
     password: abcd1234!
     driverclassName: org.h2.Driver
@@ -26,6 +26,9 @@ spring:
       path: /db-console
   quartz:
     job-store-type: jdbc
+    auto-startup: true
+    jdbc:
+      comment-prefix: QRTZ_
   devtools:
     livereload:
       enabled: true
