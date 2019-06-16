@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public abstract class DBaseParams extends HashMap implements DParams {
-    private final String MESSAGE_CD_NONE = "NON";
-    private final String MESSAGE_NONE = "NONE";
+    public static final String MESSAGE_CD_NONE = "NON";
+    public static final String MESSAGE_NONE = "NONE";
 
     protected DBaseParams(){
         this.put("messageCd", MESSAGE_CD_NONE);
