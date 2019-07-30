@@ -7,10 +7,10 @@ spring:
     template:
       cache: false
   datasource:
-    url: jdbc:h2:file:~/dbatchDB
+    url: jdbc:mysql://url:3306/mydb?
     username: sa
     password: abcd1234!
-    driverclassName: org.h2.Driver
+    driverclassName: com.mysql.jdbc.Driver
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
